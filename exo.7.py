@@ -1,0 +1,13 @@
+print("NAME: Aryan Khedekar, UIN: 251P107")
+students = {101: {"name": "John", "grade": "A", "attendance": 90}, 102: {"name": "Alice", "grade": "B", "attendance": 85}, 103: {"name": "Bob", "grade": "A", "attendance": 90}}
+students[104] = {"name": "Charlie", "grade": "B", "attendance": 80}
+print(students)
+
+students[101]["grade"] = 'A+'
+print(students)
+
+for students_id, details in students.items():
+    print(f" ID: {students_id}, Name: {details['name']}, Grade: {details['grade']},Attendance: {details['attendance']}%")
+    print(students.keys())
+    print(students.values())
+    print(students.items())
