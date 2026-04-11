@@ -1,5 +1,5 @@
 #AIM: Write a Python script to do basic Data Analysis using Pandas and Matplot.
-print("UIN: 251P102, NAME: Harsh Vernekar")
+print("UIN: 251P107, NAME: Aryan Khedekar")
 
 import pandas as pd
 import matplotlib.pyplot as plt
