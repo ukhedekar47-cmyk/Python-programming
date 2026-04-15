@@ -19,15 +19,14 @@ print("\nMissing Values:")
 print(df.isnull().sum())
 
 df = df.fillna(0)
-
 df = df.drop_duplicates()
 
-total_cases = df.groupby("country")["cases"].sum()
+total_cases = df.groupby("Country/Region")["Confirmed"].sum()
 
 print("\nTotal Cases by Country:")
 print(total_cases)
 
-plt.plot(df["date"], df["cases"])
+plt.plot(df["Date"], df["Confirmed"])
 plt.title("COVID Cases Trend")
 plt.xlabel("Date")
 plt.ylabel("Cases")
@@ -37,12 +36,15 @@ total_cases.plot(kind='bar')
 plt.title("Cases by Country")
 plt.show()
 
-df["Cases"].plot(kind='hist')
+df["Confirmed"].plot(kind='hist')
 plt.title("Distribution of Cases")
 plt.show()
 
-plt.scatter(df["Cases"], df["Deaths"])
+plt.scatter(df["Confirmed"], df["Deaths"],alpha=0.5)
 plt.xlabel("Cases")
 plt.ylabel("Deaths")
 plt.title("Cases vs Deaths")
 plt.show()
+
+
+
