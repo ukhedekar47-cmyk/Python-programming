@@ -35,7 +35,7 @@ while i <= 10:
     i = 1; sum = 0
     while i <= n: 
         sum += i; i+= 1 
-    print("Sum is:", sum)
+    print("Sum is: ", sum)
     
     
     #Reverse Number Using While Loop
@@ -43,7 +43,8 @@ while i <= 10:
     reverse = 0 
     while num > 0: 
       digit = num % 10 
-      reverse = reverse * 10 + digit; num = num // 10 
+      reverse = reverse * 10 + digit; 
+      num = num // 10 
     print("Reversed number:", reverse)
     
     
